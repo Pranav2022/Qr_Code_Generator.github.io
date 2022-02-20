@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr-code Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <div class="home">
+        <div class="navbar">
+            <div id="header-1">
+                <h1 class="primary-heading">
+                    <a href="/index.html">QR-Code Generator</a> 
+                </h1>
+            </div>
+            <span style="font: size 30px; ; cursor: pointer; padding: 6px 45px;" onclick="openNav()">&#9776;</span>
+            <nav id="myNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li> <a href="/index.html">Home</a> </li>
+                    <li> <a href="/page2.html">About</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="container">
+                <input type="text" name="text" id="text" placeholder="Enter your text">
+            </div>
+            <div class="btn">
+                <button type="submit" onclick="generateQRCode()">Create QR code</button>
+                <!-- <div class="qr-image"> -->
+            </div id= "qr">
+                <p id="qr-result">This is a default qr</p>
+                <canvas id="qr-code"></canvas>
+                <a href="dataURL" target="_blank" download="image.png">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

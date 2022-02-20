@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    background: url('/img/san-francisco.jpg')no-repeat center center/cover;
+    filter: revert;
+    filter: brightness(0.9);
+    /* opacity: 0.6; */
+}
+.banner{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+embed{
+    margin: 10px 0;
+    height: 500px;
+    /* width: 500px; */
+    width: auto;
+}
+.about{
+    width: auto;
+    margin: 10px 0;
+    padding: 10px;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+}
+.about h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    letter-spacing: 1.5px;
+}
+p{
+    padding: 10px;
+    margin: 13px 0;
+    text-align: center;
+}
+#link{
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px 0;
+    color: blue;
+}
+.info{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    opacity: 0.6;
+}
